@@ -21,6 +21,12 @@ namespace II_Corte
             InitializeComponent();
         }
 
+        private void utileria()
+        {
+            tbNombre.Clear();
+            tbNombre.Focus();
+        }
+
         private void LlenarLista()
         {
             lbLista.Items.Clear();
@@ -37,6 +43,12 @@ namespace II_Corte
 
         }
 
+        private void btnRegular_Click(object sender, EventArgs e)
+        {
+            ColaRegular.Enqueue(tbNombre.Text);
+            LlenarLista();
+            utileria();
+        }
 
     }
 }
