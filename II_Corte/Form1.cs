@@ -20,5 +20,23 @@ namespace II_Corte
         {
             InitializeComponent();
         }
+
+        private void LlenarLista()
+        {
+            lbLista.Items.Clear();
+
+            foreach (var item in ColaUrgente)
+            {
+                lbLista.Items.Add(item);
+            }
+
+            foreach (var item in ColaRegular)
+            {
+                lbLista.Items.Add(item);
+            }
+
+        }
+
+
     }
 }
