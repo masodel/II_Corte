@@ -65,6 +65,8 @@
             // 
             // btnRegular
             // 
+            this.btnRegular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegular.ForeColor = System.Drawing.Color.Lime;
             this.btnRegular.Location = new System.Drawing.Point(16, 150);
             this.btnRegular.Name = "btnRegular";
             this.btnRegular.Size = new System.Drawing.Size(99, 47);
@@ -75,6 +77,8 @@
             // 
             // btnUrgente
             // 
+            this.btnUrgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUrgente.ForeColor = System.Drawing.Color.Red;
             this.btnUrgente.Location = new System.Drawing.Point(121, 150);
             this.btnUrgente.Name = "btnUrgente";
             this.btnUrgente.Size = new System.Drawing.Size(99, 47);
@@ -85,16 +89,19 @@
             // 
             // lbLista
             // 
+            this.lbLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLista.FormattingEnabled = true;
-            this.lbLista.Location = new System.Drawing.Point(361, 74);
+            this.lbLista.ItemHeight = 20;
+            this.lbLista.Location = new System.Drawing.Point(330, 24);
             this.lbLista.Name = "lbLista";
-            this.lbLista.Size = new System.Drawing.Size(120, 95);
+            this.lbLista.Size = new System.Drawing.Size(285, 164);
             this.lbLista.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbLista);
             this.Controls.Add(this.btnUrgente);
