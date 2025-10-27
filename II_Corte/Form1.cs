@@ -50,5 +50,11 @@ namespace II_Corte
             utileria();
         }
 
+        private void btnUrgente_Click(object sender, EventArgs e)
+        {
+            ColaUrgente.Push(tbNombre.Text);
+            LlenarLista();
+            utileria();
+        }
     }
 }
