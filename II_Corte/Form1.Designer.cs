@@ -102,6 +102,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::II_Corte.Properties.Resources.WhatsApp_Image_2025_10_27_at_10_23_44_aeb5bd1d;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbLista);
             this.Controls.Add(this.btnUrgente);
