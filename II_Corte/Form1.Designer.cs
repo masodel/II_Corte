@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegular = new System.Windows.Forms.Button();
+            this.btnUrgente = new System.Windows.Forms.Button();
+            this.lbLista = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -45,12 +46,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingresa el nombre del destinatario";
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 64);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbNombre.Location = new System.Drawing.Point(16, 64);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(245, 20);
+            this.tbNombre.TabIndex = 1;
             // 
             // label2
             // 
@@ -62,33 +63,44 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Ingrese el tipo de envio";
             // 
-            // button1
+            // btnRegular
             // 
-            this.button1.Location = new System.Drawing.Point(16, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 47);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Regular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegular.Location = new System.Drawing.Point(16, 150);
+            this.btnRegular.Name = "btnRegular";
+            this.btnRegular.Size = new System.Drawing.Size(99, 47);
+            this.btnRegular.TabIndex = 3;
+            this.btnRegular.Text = "Regular";
+            this.btnRegular.UseVisualStyleBackColor = true;
+            this.btnRegular.Click += new System.EventHandler(this.btnRegular_Click);
             // 
-            // button2
+            // btnUrgente
             // 
-            this.button2.Location = new System.Drawing.Point(121, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 47);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Urgente";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUrgente.Location = new System.Drawing.Point(121, 150);
+            this.btnUrgente.Name = "btnUrgente";
+            this.btnUrgente.Size = new System.Drawing.Size(99, 47);
+            this.btnUrgente.TabIndex = 4;
+            this.btnUrgente.Text = "Urgente";
+            this.btnUrgente.UseVisualStyleBackColor = true;
+            this.btnUrgente.Click += new System.EventHandler(this.btnUrgente_Click);
+            // 
+            // lbLista
+            // 
+            this.lbLista.FormattingEnabled = true;
+            this.lbLista.Location = new System.Drawing.Point(361, 74);
+            this.lbLista.Name = "lbLista";
+            this.lbLista.Size = new System.Drawing.Size(120, 95);
+            this.lbLista.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbLista);
+            this.Controls.Add(this.btnUrgente);
+            this.Controls.Add(this.btnRegular);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Gestión de envios";
@@ -100,10 +112,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegular;
+        private System.Windows.Forms.Button btnUrgente;
+        private System.Windows.Forms.ListBox lbLista;
     }
 }
 
